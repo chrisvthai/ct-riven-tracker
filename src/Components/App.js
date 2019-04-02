@@ -44,28 +44,28 @@ class App extends Component {
   getData() {
 
     const pc_json = async () => {
-      const url = "http://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensPC.json";
+      const url = "https://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensPC.json";
       const res = await fetch(url);
       const res_json = await res.json();
       this.setState( {pc: res_json});
     };
 
     const ps4_json = async () => {
-      const url = "http://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensPS4.json";
+      const url = "https://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensPS4.json";
       const res = await fetch(url);
       const res_json = await res.json();
       this.setState( {ps4: res_json});
     };
 
     const xbox_json = async () => {
-      const url = "http://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensXB1.json";
+      const url = "https://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensXB1.json";
       const res = await fetch(url);
       const res_json = await res.json();
       this.setState( {xbox: res_json});
     };
 
     const switch_json = async () => {
-      const url = "http://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensSWI.json";
+      const url = "https://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensSWI.json";
       const res = await fetch(url);
       const res_json = await res.json();
       this.setState( {switch: res_json});
